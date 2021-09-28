@@ -1,0 +1,26 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+    name: skyline
+    labels:
+        version: v1
+spec:
+    replicas: 2
+    selector:
+        matchLabels:
+            app: skyline
+            version: v1
+    template:
+        metadata:
+            labels:
+                app: skyline
+                version: v1
+        spec:
+            containers:
+              - name: containers-skyline-test
+                image: dongsishan/skyline-server:v1
+                env: 
+                  - name: CATALOG_HOST
+                    value: catalog
+
+
