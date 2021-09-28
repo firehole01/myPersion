@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-    name: catalog-fdb
+    name: catalog-configmap
     namespace: default
 data:
     fdb.cluster: 0mvctOPP:l8ZsNwtbWSF8FlFjddd4PVYUXBX5tjP1@192.168.0.191:4500 
