@@ -19,7 +19,7 @@ spec:
             volumes:
               - name: vol-15927317327
                 configMap:
-                    name: catalog-fdb
+                    name: catalog-configmap
                     items:
                       - key: fdb.cluster
                         path: fdb.cluster
